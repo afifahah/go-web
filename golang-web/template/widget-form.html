@@ -1,0 +1,25 @@
+
+<div class="form-popup" id="myForm">
+    <form action="POST" class="form-container">
+      <label>Name</label><br><input name="name" type="text" value="" />
+      <br>
+      <label>Device</label><br><input name="device" type="text" value="" />
+      <p>Sensor</p>
+      <label>Data</label><br><input name="data" type="text" value="" />
+      <br>
+      <label>Unit</label><br><input name="unit" type="text" value="" />
+      <br>
+      <input type="submit" value="submit" />
+      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  </div>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
